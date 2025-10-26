@@ -1,0 +1,29 @@
+# Ignore Visual Studio user-specific files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build results
+bin/
+obj/
+out/
+
+# Ignore temp files
+*.log
+*.tmp
+*.db
+*.temp
+*.bak
+*.ncb
+*.cache
+*.dbmdl
+
+# Ignore app secrets and config
+appsettings.Development.json
+
+# Ignore publish outputs
+*.Publish.xml
+*.pubxml
+*.publishproj

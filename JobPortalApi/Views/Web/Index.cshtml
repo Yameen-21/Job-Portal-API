@@ -1,0 +1,32 @@
+﻿@model IEnumerable<JobPortalApi.Models.Job>
+@{
+    ViewData["Title"] = "Job Listings";
+}
+
+<div class="d-flex align-items-center justify-content-between mb-3">
+    <h2 class="mb-0">Latest Job Openings</h2>
+    <a href="/" class="btn btn-outline-light btn-sm">Refresh</a>
+</div>
+
+<div class="row">
+    @foreach (var job in Model)
+    {
+            <div class="col-md-6 mb-3">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-info">@job.Title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">@job.Company — @job.Location</h6>
+                        <p class="card-text text-secondary">
+                        @{
+                            var snippet = job.Description ?? "";
+                            snippet = snippet.Length > 140 ? snippet.Substring(0, 140) + "..." : snippet;
+                        }
+                        @snippet
+                        </p>
+                        <p class="mb-2"><strong>Salary:</strong> @job.SalaryMin.ToString("C0") - @job.SalaryMax.ToString("C0")</p>
+                        <a asp-action="Details" asp-route-id="@job.Id" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+    }
+</div>

@@ -1,0 +1,34 @@
+﻿@model List<JobPortalMvc.Models.JobViewModel>
+
+<h2>Available Jobs</h2>
+
+@if (!Model.Any())
+{
+    <p>No jobs available.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Company</th>
+                <th>Location</th>
+                <th>Salary</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var job in Model)
+            {
+                <tr>
+                    <td>@job.Title</td>
+                    <td>@job.Company</td>
+                    <td>@job.Location</td>
+                    <td>@($"{job.SalaryMin} - {job.SalaryMax}")</td>
+                    <td><a href="/Home/Details/@job.Id" class="btn btn-primary">View Details</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

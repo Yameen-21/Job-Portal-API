@@ -1,0 +1,16 @@
+﻿@model JobPortalApi.Models.Job
+@{
+    ViewData["Title"] = "Job Details";
+}
+
+<a asp-action="Index" class="btn btn-outline-secondary mb-3">← Back to Jobs</a>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body">
+        <h2 class="text-info">@Model.Title</h2>
+        <h5>@Model.Company — <span class="text-muted">@Model.Location</span></h5>
+        <p class="text-secondary mt-3">@Model.Description</p>
+        <p class="mt-2"><strong>Salary:</strong> @Model.SalaryMin.ToString("C0") - @Model.SalaryMax.ToString("C0")</p>
+        <p class="text-muted">Posted by @Model.Recruiter.FullName on @Model.PostedAt.ToLocalTime().ToString("dd MMM yyyy")</p>
+    </div>
+</div>

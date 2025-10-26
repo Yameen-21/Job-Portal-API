@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobPortalApi", "JobPortalApi.csproj", "{73B75D0F-25B5-4A85-A60A-8BD4C7DB75B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobPortalMvc", "..\JobPortalMvc\JobPortalMvc.csproj", "{A20D8DC4-4CEA-4DAC-A9DC-80250208600D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73B75D0F-25B5-4A85-A60A-8BD4C7DB75B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B75D0F-25B5-4A85-A60A-8BD4C7DB75B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B75D0F-25B5-4A85-A60A-8BD4C7DB75B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73B75D0F-25B5-4A85-A60A-8BD4C7DB75B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A20D8DC4-4CEA-4DAC-A9DC-80250208600D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A20D8DC4-4CEA-4DAC-A9DC-80250208600D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A20D8DC4-4CEA-4DAC-A9DC-80250208600D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A20D8DC4-4CEA-4DAC-A9DC-80250208600D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD95DFAD-E7F5-442C-B787-0CB059BB6372}
+	EndGlobalSection
+EndGlobal
